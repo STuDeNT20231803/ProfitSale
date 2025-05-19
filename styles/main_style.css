@@ -17,14 +17,13 @@ body {
     display: flex;
     min-height: 100vh;
     max-width: 1400px;
-    min-width: 100px;
+    min-width: 400px;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0px 0px 15px rgba(0.1, 0.1, 0.1, 0.5);
-    width: 100%;
-    box-sizing: border-box; /* Добавьте это */
-    position: relative; /* Для абсолютного позиционирования лого */
-    gap: 20px; /* Расстояние между сайдбаром и контентом */
+     width: 100%;
+     position: relative;
+    gap: 20px;
 }
 
 .log {
@@ -35,10 +34,12 @@ body {
 }
 
 .sidebar {
-    box-sizing: border-box; /* Добавьте это */
-    display: flex;
     width: 180px; /* Фиксированная ширина */
     min-width: 180px; /* Запрет на уменьшение */
+    margin-top: 120px;
+    background-color: #333;
+    padding: 20px;
+    top: 120px;
     margin-top: 120px;
     background-color: #333;
     padding: 20px;
