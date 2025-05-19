@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -15,6 +20,10 @@ body {
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0px 0px 15px rgba(0.1, 0.1, 0.1, 0.5);
+     width: 100%;
+    box-sizing: border-box; /* Добавьте это */
+    position: relative; /* Для абсолютного позиционирования лого */
+    gap: 20px; /* Расстояние между сайдбаром и контентом */
 }
 
 .log {
@@ -25,8 +34,13 @@ body {
 }
 
 .sidebar {
+    width: 180px; /* Фиксированная ширина */
+    min-width: 180px; /* Запрет на уменьшение */
     margin-top: 120px;
-    width: 200px;
+    background-color: #333;
+    padding: 20px;
+    top: 120px;
+    margin-top: 120px;
     background-color: #333;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -57,6 +71,10 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+     margin-top: 120px;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 h1 {
